@@ -1,0 +1,75 @@
+[
+    {
+      "courseId": "CS101",
+      "courseName": "Introduction to Computer Science",
+      "courseDescription": "An introductory course to the fundamentals of computer science.",
+      "creditHours": 3,
+      "department": "Computer Science",
+      "semester": "Fall 2025",
+      "availableSeats": 30
+    },
+    {
+      "courseId": "MATH202",
+      "courseName": "Calculus I",
+      "courseDescription": "A course covering the fundamentals of differential calculus.",
+      "creditHours": 4,
+      "department": "Mathematics",
+      "semester": "Spring 2025",
+      "availableSeats": 25
+    },
+    {
+      "courseId": "ENG301",
+      "courseName": "English Literature",
+      "courseDescription": "An in-depth study of classical and modern English literature.",
+      "creditHours": 3,
+      "department": "English",
+      "semester": "Fall 2025",
+      "availableSeats": 40
+    },
+    {
+      "courseId": "PHY205",
+      "courseName": "General Physics II",
+      "courseDescription": "A continuation of General Physics I, focusing on electricity and magnetism.",
+      "creditHours": 4,
+      "department": "Physics",
+      "semester": "Spring 2025",
+      "availableSeats": 20
+    },
+    {
+      "courseId": "HIS110",
+      "courseName": "World History",
+      "courseDescription": "An overview of significant events and movements in world history.",
+      "creditHours": 3,
+      "department": "History",
+      "semester": "Fall 2025",
+      "availableSeats": 35
+    },
+    {
+      "courseId": "BIO150",
+      "courseName": "Introduction to Biology",
+      "courseDescription": "An introduction to biological concepts and the diversity of life.",
+      "creditHours": 4,
+      "department": "Biology",
+      "semester": "Spring 2025",
+      "availableSeats": 28
+    },
+    {
+      "courseId": "ART210",
+      "courseName": "Modern Art and Design",
+      "courseDescription": "A study of modern art movements and design principles.",
+      "creditHours": 3,
+      "department": "Art",
+      "semester": "Fall 2025",
+      "availableSeats": 30
+    },
+    {
+      "courseId": "CSE220",
+      "courseName": "Data Structures and Algorithms",
+      "courseDescription": "An in-depth look at data structures and algorithm design.",
+      "creditHours": 3,
+      "department": "Computer Science",
+      "semester": "Spring 2025",
+      "availableSeats": 18
+    }
+  ]
+  

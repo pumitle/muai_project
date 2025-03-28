@@ -74,8 +74,15 @@ public partial class LoginViewModel : ObservableObject
         App.CurrentUserId = user.UserId;
         System.Diagnostics.Debug.Print("กำหนดค่า CurrentUserId: " + App.CurrentUserId);
 
+        // ✅ Navigate to Homepage with user data
+        var navParams = new Dictionary<string, object>
+    {
+        { "CurrentUser", user }
+    };
+
         // ✅ เปลี่ยนหน้าไป Homepage และตรวจสอบค่าที่ส่งไป
-        await Shell.Current.GoToAsync(nameof(Homepage));
+        // await Shell.Current.GoToAsync(nameof(Homepage));
+        await Shell.Current.GoToAsync(nameof(Homepage), navParams);
     }
 
 

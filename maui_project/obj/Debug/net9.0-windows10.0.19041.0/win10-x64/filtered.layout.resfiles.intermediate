@@ -62,5 +62,6 @@ splashSplashScreen.scale-150.png
 splashSplashScreen.scale-200.png
 splashSplashScreen.scale-400.png
 AboutAssets.txt
+courses.json
 users.json
 Resources\Raw\users.json

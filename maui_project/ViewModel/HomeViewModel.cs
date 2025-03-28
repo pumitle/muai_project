@@ -21,6 +21,8 @@ namespace maui_project.ViewModel
         private string selectedPreviousSemester;
 
         private List<User> users = new List<User>();
+
+        [ObservableProperty]
         private User? currentUser;
 
         // โหลดข้อมูลผู้ใช้
@@ -47,17 +49,23 @@ namespace maui_project.ViewModel
                 System.Diagnostics.Debug.Print("Error loading users: " + ex.Message);
             }
 
-             PreviousSemesters.Insert(0, "เลือกเทอมที่ต้องการดู");
+            PreviousSemesters.Insert(0, "เลือกเทอมที่ต้องการดู");
         }
 
         public void SetCurrentUser(string userId)
         {
             var matchedUsers = users.Where(u => u.UserId == userId).ToList();
-            currentUser = matchedUsers.FirstOrDefault();
+            CurrentUser = matchedUsers.FirstOrDefault();
 
-            if (currentUser != null)
+            if (CurrentUser != null)
             {
-                var currentSemester = currentUser.Enrollment
+                // ✅ แสดงข้อมูลผู้ใช้
+                System.Diagnostics.Debug.Print($"ชื่อ: {CurrentUser.Name}");
+                System.Diagnostics.Debug.Print($"อีเมล: {CurrentUser.Email}");
+                System.Diagnostics.Debug.Print($"คณะ: {CurrentUser.Faculty}");
+                System.Diagnostics.Debug.Print($"ปีการศึกษา: {CurrentUser.Year}");
+
+                var currentSemester = CurrentUser.Enrollment
                     .OrderByDescending(e => e.AcademicYear)
                     .ThenByDescending(e => e.Semester)
                     .FirstOrDefault();
@@ -67,7 +75,7 @@ namespace maui_project.ViewModel
                     CurrentSemesterCourses = new ObservableCollection<Course>(currentSemester.Courses);
                 }
 
-                var previousSemestersList = currentUser.Enrollment
+                var previousSemestersList = CurrentUser.Enrollment
                     .OrderByDescending(e => e.AcademicYear)
                     .ThenByDescending(e => e.Semester)
                     .Skip(1)
@@ -75,14 +83,15 @@ namespace maui_project.ViewModel
 
                 if (previousSemestersList.Any())
                 {
-                    previousSemesters.Clear();
+                    PreviousSemesters.Clear();
                     foreach (var semester in previousSemestersList)
                     {
-                        previousSemesters.Add($"เทอม {semester.Semester}");
+                        PreviousSemesters.Add($"เทอม {semester.Semester}");
                     }
                 }
             }
         }
+
 
         [RelayCommand]
         public void OnPreviousSemesterSelected()

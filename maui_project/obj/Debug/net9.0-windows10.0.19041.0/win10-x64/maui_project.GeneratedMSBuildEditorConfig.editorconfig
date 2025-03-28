@@ -15,7 +15,7 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = maui_project
-build_property.ProjectDir = D:\cross\maui_project\maui_project\
+build_property.ProjectDir = D:\workearn\muai_project\maui_project\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.CsWinRTAotExportsEnabled = 
@@ -27,43 +27,49 @@ build_property.CsWinRTUseWindowsUIXamlProjections = false
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[D:/cross/maui_project/maui_project/App.xaml]
+[D:/workearn/muai_project/maui_project/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[D:/cross/maui_project/maui_project/AppShell.xaml]
+[D:/workearn/muai_project/maui_project/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[D:/cross/maui_project/maui_project/MainPage.xaml]
+[D:/workearn/muai_project/maui_project/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[D:/cross/maui_project/maui_project/Pages/Homepage.xaml]
+[D:/workearn/muai_project/maui_project/Pages/Homepage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.Pages.Homepage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\Homepage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Homepage.xaml
 
-[D:/cross/maui_project/maui_project/Pages/LoginPage.xaml]
+[D:/workearn/muai_project/maui_project/Pages/LoginPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.Pages.LoginPage.xaml
 build_metadata.AdditionalFiles.TargetPath = Pages\LoginPage.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\LoginPage.xaml
 
-[D:/cross/maui_project/maui_project/Resources/Styles/Colors.xaml]
+[D:/workearn/muai_project/maui_project/Pages/RegPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = maui_project.Pages.RegPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\RegPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\RegPage.xaml
+
+[D:/workearn/muai_project/maui_project/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.Resources.Styles.Colors.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[D:/cross/maui_project/maui_project/Resources/Styles/Styles.xaml]
+[D:/workearn/muai_project/maui_project/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = maui_project.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml

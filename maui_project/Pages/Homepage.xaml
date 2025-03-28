@@ -11,6 +11,30 @@
     </ContentPage.BindingContext>
 
     <StackLayout Padding="10">
+
+        <!-- ข้อมูลผู้ใช้ -->
+
+        <Frame Padding="10"
+               BackgroundColor="White"
+               CornerRadius="10"
+               Margin="0,0,0,10">
+            <StackLayout Spacing="5">
+                <Label Text="{Binding CurrentUser.Name, StringFormat='ชื่อ: {0}'}"
+                       FontSize="20"
+                       TextColor="Black"/>
+                <Label Text="{Binding CurrentUser.Email, StringFormat='อีเมล: {0}'}"
+                       FontSize="16"
+                       TextColor="Gray"/>
+                <Label Text="{Binding CurrentUser.Faculty, StringFormat='คณะ: {0}'}"
+                       FontSize="16"
+                       TextColor="Gray"/>
+                <Label Text="{Binding CurrentUser.Year, StringFormat='ปีการศึกษา: {0}'}"
+                       FontSize="16"
+                       TextColor="Gray"/>
+            </StackLayout>
+        </Frame>
+
+
         <Label Text="วิชาที่ลงทะเบียนในเทอมนี้"
                FontSize="24"
                TextColor="Black"
@@ -20,10 +44,14 @@
         <CollectionView ItemsSource="{Binding CurrentSemesterCourses}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" BorderColor="Gray" Margin="5">
+                    <Frame Padding="10"
+                           BorderColor="Gray"
+                           Margin="5">
                         <StackLayout>
-                            <Label Text="{Binding CourseName}" FontSize="18"/>
-                            <Label Text="{Binding Credits, StringFormat='Credits: {0}'}" FontSize="14"/>
+                            <Label Text="{Binding CourseName}"
+                                   FontSize="18"/>
+                            <Label Text="{Binding Credits, StringFormat='Credits: {0}'}"
+                                   FontSize="14"/>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
@@ -36,25 +64,50 @@
                HorizontalOptions="Start"
                Margin="0,20"/>
 
-        <Picker ItemsSource="{Binding PreviousSemesters}" 
-        SelectedItem="{Binding SelectedPreviousSemester}"
-        SelectedIndexChanged="OnPreviousSemesterSelected"
-        TextColor="Black"
-        BackgroundColor="White"/>
+        <Picker ItemsSource="{Binding PreviousSemesters}"
+                SelectedItem="{Binding SelectedPreviousSemester}"
+                SelectedIndexChanged="OnPreviousSemesterSelected"
+                TextColor="Black"
+                BackgroundColor="White"/>
 
 
         <CollectionView ItemsSource="{Binding SelectedPreviousSemesterCourses}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
-                    <Frame Padding="10" BorderColor="Gray" Margin="5">
+                    <Frame Padding="10"
+                           BorderColor="Gray"
+                           Margin="5">
                         <StackLayout>
-                            <Label Text="{Binding CourseName}" FontSize="18"/>
-                            <Label Text="{Binding Credits, StringFormat='Credits: {0}'}" FontSize="14"/>
+                            <Label Text="{Binding CourseName}"
+                                   FontSize="18"/>
+                            <Label Text="{Binding Credits, StringFormat='Credits: {0}'}"
+                                   FontSize="14"/>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
+        <!-- ปุ่ม 2 ปุ่ม -->
+        <StackLayout Orientation="Horizontal"
+                     HorizontalOptions="Center"
+                     Spacing="20"
+                     Margin="0,20">
+            <Button Text="ลงทะเบียน"
+                    BackgroundColor="#FF17B024"
+                    TextColor="White"
+                    WidthRequest="150"
+                    Clicked="OnButton1Clicked"/>
+            <Button Text="ถอนรายวิชา"
+                    BackgroundColor="#FF1308E2"
+                    TextColor="White"
+                    WidthRequest="150"
+                    Clicked="OnButton2Clicked"/>
+            <Button Text="ออกระบบ"
+                    BackgroundColor="#FFFC1D04"
+                    TextColor="White"
+                    WidthRequest="150"
+                    Clicked="OnButton3Clicked"/>
+        </StackLayout>
 
     </StackLayout>
 </ContentPage>
