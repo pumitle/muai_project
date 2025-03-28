@@ -107,5 +107,26 @@ namespace maui_project.ViewModel
                 }
             }
         }
+
+        // คำสั่งใหม่สำหรับการถอนรายวิชา
+        [RelayCommand]
+        public async void WithdrawCourse(Course course)
+        {
+            if (course != null)
+            {
+                bool isConfirmed = await Application.Current.MainPage.DisplayAlert(
+                    "ยืนยันการถอน",
+                    $"คุณแน่ใจหรือว่าจะถอนวิชา {course.CourseName}?",
+                    "ยืนยัน",
+                    "ยกเลิก"
+                );
+
+                if (isConfirmed)
+                {
+                    CurrentSemesterCourses.Remove(course);
+                    System.Diagnostics.Debug.WriteLine($"รายวิชา {course.CourseName} ถูกถอนออกแล้ว");
+                }
+            }
+        }
     }
 }

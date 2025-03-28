@@ -52,6 +52,14 @@
                                    FontSize="18"/>
                             <Label Text="{Binding Credits, StringFormat='Credits: {0}'}"
                                    FontSize="14"/>
+
+                            <!-- ปุ่มถอนรายวิชาแต่ละรายวิชา -->
+                            <Button Text="ถอนรายวิชา"
+                                    BackgroundColor="#FF1308E2"
+                                    TextColor="White"
+                                    WidthRequest="150"
+                                    Command="{Binding Source={RelativeSource AncestorType={x:Type vm:HomeViewModel}}, Path=WithdrawCourseCommand}"
+                                    CommandParameter="{Binding}"/>
                         </StackLayout>
                     </Frame>
                 </DataTemplate>
