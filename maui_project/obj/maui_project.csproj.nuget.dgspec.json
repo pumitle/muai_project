@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Workearnnn\\muai_project\\maui_project\\maui_project.csproj": {}
+    "D:\\workearn\\muai_project\\maui_project\\maui_project.csproj": {}
   },
   "projects": {
-    "D:\\Workearnnn\\muai_project\\maui_project\\maui_project.csproj": {
+    "D:\\workearn\\muai_project\\maui_project\\maui_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Workearnnn\\muai_project\\maui_project\\maui_project.csproj",
+        "projectUniqueName": "D:\\workearn\\muai_project\\maui_project\\maui_project.csproj",
         "projectName": "maui_project",
-        "projectPath": "D:\\Workearnnn\\muai_project\\maui_project\\maui_project.csproj",
+        "projectPath": "D:\\workearn\\muai_project\\maui_project\\maui_project.csproj",
         "packagesPath": "C:\\Users\\TIETLE\\.nuget\\packages\\",
-        "outputPath": "D:\\Workearnnn\\muai_project\\maui_project\\obj\\",
+        "outputPath": "D:\\workearn\\muai_project\\maui_project\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [

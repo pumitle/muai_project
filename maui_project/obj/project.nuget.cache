@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SXyPI7c9/1M=",
+  "dgSpecHash": "1Unt81exoNQ=",
   "success": true,
-  "projectFilePath": "D:\\Workearnnn\\muai_project\\maui_project\\maui_project.csproj",
+  "projectFilePath": "D:\\workearn\\muai_project\\maui_project\\maui_project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TIETLE\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.0\\communitytoolkit.mvvm.8.4.0.nupkg.sha512",
     "C:\\Users\\TIETLE\\.nuget\\packages\\microsoft.extensions.configuration\\9.0.0\\microsoft.extensions.configuration.9.0.0.nupkg.sha512",
