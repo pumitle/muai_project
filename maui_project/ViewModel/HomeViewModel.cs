@@ -115,7 +115,7 @@ namespace maui_project.ViewModel
             if (course != null)
             {
                 bool isConfirmed = await Application.Current.MainPage.DisplayAlert(
-                    "ยืนยันการถอน",
+                    "ยืนยันการถอนนะ",
                     $"คุณแน่ใจหรือว่าจะถอนวิชา {course.CourseName}?",
                     "ยืนยัน",
                     "ยกเลิก"
