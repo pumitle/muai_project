@@ -1,0 +1,107 @@
+[
+  {
+      "user_id": "001",
+      "name": "Carina Phan",
+      "email": "carina@gmail.com",
+      "password": "1111",
+      "student_id": "6600123456",
+      "faculty": "คณะวิทยาการคอมพิวเตอร์",
+      "year": 2,
+      "enrollment": [
+          {
+              "academic_year": 2024,
+              "semester": 3,
+              "courses": [
+                  { "course_id": "CS202", "course_name": "Machine Learning", "credits": 3 },
+                  { "course_id": "CS204", "course_name": "Software Engineering", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 2,
+              "courses": [
+                  { "course_id": "CS201", "course_name": "Data Structures", "credits": 3 },
+                  { "course_id": "CS203", "course_name": "Artificial Intelligence", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 1,
+              "courses": [
+                  { "course_id": "CS101", "course_name": "Introduction to Programming", "credits": 3 },
+                  { "course_id": "CS102", "course_name": "Database Systems", "credits": 3 }
+              ]
+          }
+      ]
+  },
+  {
+      "user_id": "002",
+      "name": "Napat Supachai",
+      "email": "napat@gmail.com",
+      "password": "2222",
+      "student_id": "6600123457",
+      "faculty": "คณะวิศวกรรมศาสตร์",
+      "year": 3,
+      "enrollment": [
+          {
+              "academic_year": 2024,
+              "semester": 3,
+              "courses": [
+                  { "course_id": "ENG301", "course_name": "Control Systems", "credits": 3 },
+                  { "course_id": "ENG302", "course_name": "Power Electronics", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 2,
+              "courses": [
+                  { "course_id": "ENG201", "course_name": "Digital Circuits", "credits": 3 },
+                  { "course_id": "ENG202", "course_name": "Signals and Systems", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 1,
+              "courses": [
+                  { "course_id": "ENG101", "course_name": "Basic Electrical Engineering", "credits": 3 },
+                  { "course_id": "ENG102", "course_name": "Engineering Mathematics", "credits": 3 }
+              ]
+          }
+      ]
+  },
+  {
+      "user_id": "003",
+      "name": "Lisa Wong",
+      "email": "lisa@gmail.com",
+      "password": "3333",
+      "student_id": "6600123458",
+      "faculty": "คณะบริหารธุรกิจ",
+      "year": 1,
+      "enrollment": [
+          {
+              "academic_year": 2024,
+              "semester": 3,
+              "courses": [
+                  { "course_id": "BA301", "course_name": "Marketing Strategies", "credits": 3 },
+                  { "course_id": "BA302", "course_name": "Financial Accounting", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 2,
+              "courses": [
+                  { "course_id": "BA201", "course_name": "Microeconomics", "credits": 3 },
+                  { "course_id": "BA202", "course_name": "Business Communication", "credits": 3 }
+              ]
+          },
+          {
+              "academic_year": 2024,
+              "semester": 1,
+              "courses": [
+                  { "course_id": "BA101", "course_name": "Introduction to Business", "credits": 3 },
+                  { "course_id": "BA102", "course_name": "Principles of Management", "credits": 3 }
+              ]
+          }
+      ]
+  }
+]

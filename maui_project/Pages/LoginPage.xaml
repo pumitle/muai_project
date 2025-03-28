@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="maui_project.Pages.LoginPage"
+             Shell.NavBarIsVisible="False"
+             xmlns:viewmodel="clr-namespace:maui_project.ViewModel"
+             x:DataType="viewmodel:LoginViewModel"
+             Title="LoginPage">
+    <Grid>
+
+        <Image Source="bglearn.jpg"
+               Aspect="AspectFill"
+               HorizontalOptions="Fill"
+               VerticalOptions="Fill"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <VerticalStackLayout Grid.Column="1"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Start"
+                                 Margin="30,0,0,0">
+                <Frame Padding="20"
+                       CornerRadius="15"
+                       BackgroundColor="Transparent"
+                       Opacity="0.9"
+                       BorderColor="White"
+                       WidthRequest="300"
+                       HeightRequest="380">
+                    <VerticalStackLayout Spacing="10">
+                        <Image Source="teamwork.png"
+                               WidthRequest="60"/>
+                        <Label Text="Email"
+                               FontSize="13"
+                               TextColor="Black"/>
+                        <Entry  Placeholder="อีเมล"
+                                HorizontalTextAlignment="Center"
+                                TextColor="Black"
+                                Text="{Binding Email}"/>
+                        <Label Text="Password"
+                               FontSize="13"
+                               TextColor="Black"/>
+                        <Entry Placeholder="รหัสผ่าน"
+                               TextColor="Black"
+                               HorizontalTextAlignment="Center"
+                               IsPassword="True"
+                               Text="{Binding Password}"/>
+                        <Button Text="Login"
+                                BackgroundColor="white"
+                                TextColor="Black"
+                                CornerRadius="8"
+                                Margin="0,13"
+                              Command="{Binding LoginCommand}"/> 
+
+                       
+                    </VerticalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
